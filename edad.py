@@ -5,6 +5,6 @@ edad_usuario=int(input("Introduce tu edad: "))
 if edad_usuario>100 or edad_usuario<0:
 	print("Edad incorrecta")
 elif edad_usuario<18:
-	print("No Puede ingresar")
+	print("No es mayor de edad")
 else:
-	print("Puede ingresar")
+	print("Es mayor de edad")
