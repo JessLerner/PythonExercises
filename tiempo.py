@@ -8,6 +8,6 @@ minuto=time.localtime().tm_min
 if hora>=19 and hora<=8:
 	print("Puedes irte a casa")
 elif hora==18:
-	print("Faltan ",59-minuto,"minutos para que puedas irte")
+	print("Faltan ",60-minuto,"minutos para que puedas irte")
 else:
-	print("Faltan ",18-hora,"horas y",59-minuto," minutos para que puedas irte")
+	print("Faltan ",18-hora,"horas y",60-minuto," minutos para que puedas irte")
