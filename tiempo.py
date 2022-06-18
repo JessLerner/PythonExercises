@@ -2,10 +2,12 @@
 En el caso de que sean más de las 19, se mostrará un mensaje y en caso contrario, haréis una operación para calcular el tiempo que queda de trabajo."""
 
 import time
+hora=time.localtime().tm_hour
+minuto=time.localtime().tm_min
 
-if time.localtime().tm_hour>=19 or time.localtime().tm_hour<=8:
+if hora>=19 and hora<=8:
 	print("Puedes irte a casa")
-elif time.localtime().tm_hour==18:
-	print("Faltan ",60-time.localtime().tm_min,"minutos para que puedas irte")
+elif hora==18:
+	print("Faltan ",59-minuto,"minutos para que puedas irte")
 else:
-	print("Faltan ",18-time.localtime().tm_hour,"horas y",59-time.localtime().tm_min," minutos para que puedas irte")
+	print("Faltan ",18-hora,"horas y",59-minuto," minutos para que puedas irte")
